@@ -25,7 +25,7 @@ const CalculatorContext = createContext<CalculatorContextType>(
  }
 )
 
-const CalculatorFunctionProvider: FC<CalculatorProviderChildren> = ({ children }) => {
+const CalculatorProvider: FC<CalculatorProviderChildren> = ({ children }) => {
  const [memory, setMemory] = useState("")
  const [input, setInput] = useState("0")
  const [operator, setOperator] = useState("")
@@ -113,4 +113,4 @@ const CalculatorFunctionProvider: FC<CalculatorProviderChildren> = ({ children }
 }
 
 const useCalculatorContext = () => useContext(CalculatorContext)
-export { CalculatorFunctionProvider, useCalculatorContext }
+export { CalculatorProvider, useCalculatorContext }

@@ -1,18 +1,19 @@
-'use client'
-import { CalculatorFunctionProvider } from "./calculatorFunctions"
-import { CalculatorThemeProvider } from "./calculatorThemeProvider"
-import CalculatorHeader from "./calculatorTheme"
-import CalculatorDisplay from "./calculatorDisplay"
-import CalculatorButtons from "./calculatorButtons"
+import { CalculatorProvider } from "./context/calculatorProvider"
+import { ThemeProvider } from "./context/themeProvider"
+import CalculatorHeader from "./theme/calculatorTheme"
+import CalculatorDisplay from "./elements/calculatorDisplay"
+import CalculatorButtons from "./elements/calculatorButtons"
 
-export default function Calculator() {
+const Calculator = () => {
  return (
-  <CalculatorThemeProvider>
-   <CalculatorFunctionProvider>
+  <ThemeProvider>
+   <CalculatorProvider>
     <CalculatorHeader />
     <CalculatorDisplay />
     <CalculatorButtons />
-   </CalculatorFunctionProvider>
-  </CalculatorThemeProvider>
+   </CalculatorProvider>
+  </ThemeProvider>
  )
 }
+
+export { Calculator }

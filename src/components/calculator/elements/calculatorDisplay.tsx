@@ -1,5 +1,5 @@
-import { useCalculatorContext } from './calculatorFunctions'
-import style from './calculator.module.css'
+import { useCalculatorContext } from '../context/calculatorProvider'
+import style from '../style/calculator.module.css'
 
 
 export default function CalculatorDisplay() {

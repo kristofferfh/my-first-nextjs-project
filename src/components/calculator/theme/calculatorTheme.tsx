@@ -1,9 +1,9 @@
-import { useCalculatorThemeContext } from './calculatorThemeProvider'
-import theme from './calculatorTheme.module.css'
-import style from './calculator.module.css'
+import { useThemeContext } from '../context/themeProvider'
+import theme from '../style/theme.module.css'
+import style from '../style/calculator.module.css'
 
 function ThemeSwitcher() {
- const { setTheme } = useCalculatorThemeContext()
+ const { setTheme } = useThemeContext()
 
  return (
   <div id={style.themeSelectorContainer}>

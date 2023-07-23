@@ -1,11 +1,11 @@
-import Image from 'next/image'
 import styles from './page.module.css'
-import Calculator from '@/components/calculator/calculator'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Calculator />
-    </main>
+    <>
+      <main className={styles.main}>
+        <p>content</p>
+      </main>
+    </>
   )
 }

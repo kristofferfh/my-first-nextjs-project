@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
-#calculator {
- font-family: 'League Spartan', sans-serif;
- padding: 2em;
- min-width: 375px;
- max-width: 750px;
- font-size: 32px;
- font-weight: 700;
- background-color: var(--background-main);
- color: var(--text-primary);
-}
-
 #wrapper {
  display: flex;
  justify-content: center;
  background-color: var(--background-main);
- width: 100%;
+ width: clamp(375px,100%, 100%);
  height: 100vh;
+ overflow: hidden;
+}
+
+#calculator {
+ font-family: 'League Spartan', sans-serif;
+ padding: 2em 0.5em;
+ width: clamp(375px, 100%, 540px);
+ font-size: 32px;
+ font-weight: 700;
+ background-color: var(--background-main);
+ color: var(--text-primary);
 }
 
 #header {
@@ -52,14 +52,12 @@
  padding: 1em;
  display: grid;
  background-color: var(--background-keypad);
- width: 100%;
  grid-template-columns: repeat(4, 1fr);
  gap: 0.5em;
  border-radius: 10px;
 }
 
 .input > input {
- padding: 0.3em 1.3em;
  text-align: center;
  font-size: 32px;
  font-weight: 700;

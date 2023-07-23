@@ -1,0 +1,24 @@
+.header {
+ position: fixed;
+ display: flex;
+ justify-content: space-around;
+ align-content: center;
+ height: 50px;
+ width: 100%;
+ background-color: #1d1d1d;
+ z-index: 1;
+}
+
+.nav ul {
+ display: flex;
+ list-style: none;
+}
+
+.nav li {
+ margin: 0 0.2em;
+}
+
+.nav a {
+ color: orangered;
+ text-decoration: none;
+}
